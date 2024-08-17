@@ -1,0 +1,34 @@
+<div>
+  <h2>Registro de nuevo miembro al Sport Club</h2>
+  <form [formGroup]="myParentForm" (ngSubmit)="submitParentForm()">
+    <!-- <label for="name"> Name: </label>
+    <input type="text" id="name" name="name" formControlName="name" required />
+
+    <label for="email"> Email: </label>
+    <input type="email" id="email" name="email" formControlName="email" required/>
+  
+    <label form="tel"> Teléfono: </label>
+    <input type="tel" id="tel" formControlName="tel" required/>
+  
+    <label form="number"> Número de acompañantes: </label>
+    <input type="number" id="number" formControlName="number" required/>
+
+    <label form="password"> Contraseña: </label>
+    <input type="password" id="password" formControlName="password" required/>
+  
+    <label form="file"> Comprobante de pago: </label>
+    <input type="file" id="file" formControlName="file" required/> -->
+
+    <!-- Botón para mostrar/ocultar información adicional -->
+    <!-- Activar el botón si el Comprobante de pago es válido -->
+     <!-- OJO agregar por ejemplo algo así:
+          Favorite Color: <input type="text" [(ngModel)]="favoriteColor" (ngModelChange)="onColorChange($event)">
+          <p>Your favorite color is: {{ favoriteColor }}</p>
+     -->
+    <!-- <app-additional-information (colorSelected)="onColorSelected($event)"></app-additional-information> -->
+    <app-additional-information></app-additional-information>
+    <button type="submit" name="button" [disabled]="!myParentForm.valid">
+      Enviar
+    </button>
+  </form>
+</div>

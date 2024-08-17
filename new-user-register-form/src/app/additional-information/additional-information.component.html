@@ -1,0 +1,16 @@
+<!-- <form #childForm="ngForm" (ngSubmit)="submitChildForm(childForm)" >
+    <label for="color">Color de estilo: </label>
+    <input type="color" id="color" name="color" ngModel required/>
+    <label for="hobby">Hobby: </label>
+    Input de Horas dedicadas al hobby si tiene sino no-->
+    <!-- <input type="text" id="hobby" name="hobby" ngModel required/>
+    <label for="linkedin">Linkedin: </label>
+    <input type="url" id="linkedin" name="linkedin" ngModel required/>
+
+    <button type="submit">Guardar</button>
+</form> -->
+
+<form (ngSubmit)="submitChildForm()" >
+    <label for="hobby">Hobby: </label>
+    <input type="text" id="hobby" name="hobby" ngModel required/>
+</form>
